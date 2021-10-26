@@ -19,5 +19,5 @@ async function initialize() {
     db.User = require('../users/user.model')(sequelize);
 
     // sync all models with database
-    await sequelize.sync();
+    await sequelize.sync({ alter: true });
 }
