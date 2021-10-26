@@ -1,0 +1,21 @@
+{
+    "name": "node-mysql-crud-api",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "start": "node ./server.js",
+        "start:dev": "nodemon ./server.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "joi": "^17.2.0",
+        "mysql2": "^2.1.0",
+        "rootpath": "^0.1.2",
+        "sequelize": "^6.3.4"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
