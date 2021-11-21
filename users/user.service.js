@@ -36,9 +36,9 @@ async function update(id, params) {
     const user = await getUser(id);
 
     // validate
-    const usernameChanged = params.username && user.username !== params.username;
-    if (usernameChanged && await db.User.findOne({ where: { username: params.username } })) {
-        throw 'Username "' + params.username + '" is already taken';
+    const emailChanged = params.email && user.email !== params.email;
+    if (emailChanged && await db.User.findOne({ where: { email: params.email } })) {
+        throw 'Email "' + params.email + '" is already registered';
     }
 
     // hash password if it was entered
