@@ -1,4 +1,7 @@
 module.exports = {
     Admin: 'Admin',
-    User: 'User'
+    User: 'User',
+    Sales: 'Sales',
+    Hrd: 'Hrd',
+    Recuiter: 'Recuiter'
 }
